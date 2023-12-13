@@ -1,0 +1,148 @@
+@media screen and (max-width : 300px) {
+    body {
+        font-size: xx-small;
+    }
+}
+@media screen and (min-width : 301px)and (max-width : 576px){
+    body {
+        font-size: x-small;
+    }
+}
+@media screen and (min-width : 577px)and (max-width :700px){
+    body {
+        font-size: small;
+    }
+}
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-image : url("https://images8.alphacoders.com/403/thumb-1920-403441.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.menu {
+    display : flex ;
+    justify-content: space-between;
+    padding : 10px  ;
+}
+.menu .a {
+    position : relative ;
+    /*background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);*/
+    padding : 5px ;
+    /*text-transform: uppercase;*/
+    text-decoration: none;
+    color : #ffffff ;
+}
+.menu .a::after {
+    content :"";
+    position : absolute ;
+    left :0 ;
+    bottom : -2px ;
+    width : 0 ;
+    height :2px ;
+    background-color: #ffffff;
+    transition: width 0.5s ease;
+}
+.menu .a:hover::after {
+    width : 100% ;
+    filter : brightness(1000)
+}
+.menu .a:hover {
+    transform: scale(1.1);
+    text-shadow : 2px 3px 6px  #ffffff;
+}
+h1 {
+    text-align: center;
+    color : #ffffff;
+    text-transform: uppercase;
+    text-shadow : 2px 3px 6px  #ffffff;
+}
+.partie1 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    align-items: center;
+}
+.partie_droite {
+    margin-bottom: 15%;
+}
+.partie_gauche {
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    color : #eeeeee ;
+    border : none ;
+    border-radius  : 50px ;
+    padding : 9px 0px 9px 9px ;
+    cursor : text ;
+    margin-bottom: 15%;
+    background: linear-gradient(to right,#2b2929, #242323, #0d0d0d);
+
+}
+.boutton {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    background: linear-gradient(to right,#92dcde, #00e3e7, #20B2AA);
+    padding: 5px 5px 5px 5px;
+    border : none ;
+    border-radius: 15px ;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    font-size: large;
+    cursor : pointer ;
+}
+.boutton a {
+    text-decoration: none;
+    color :black ;
+}
+.boutton:hover a{
+    color : #20B2AA;
+}
+.boutton:hover {
+    transform: scale(1.1);
+    transition: .4s ease-in ;
+    background: linear-gradient(to right,#000000, #000000, #000000);
+}
+header {
+    top : 0% ;
+    left : 0% ;
+    background-attachment: fixed;
+    background-color: #2b2929;
+    text-align: center;
+}
+footer {
+    margin-top: 10%;
+    background-color: #2b2929;
+    padding : 10px ;
+    text-align: center;
+    color :#b4b4b4 ;
+    margin-bottom :0 ;
+    bottom: 0;
+    
+}
+body {
+    margin:0;
+  }
+
+  .button {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    background: linear-gradient(to right,#92dcde, #00e3e7, #20B2AA);
+    padding: 5px 5px 5px 5px;
+    border : none ;
+    border-radius: 15px ;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    cursor : pointer ;
+}
+.button a {
+    text-decoration: none;
+    color :black ;
+}
+.button:hover a{
+    color : #20B2AA;
+}
+.button:hover {
+    transform: scale(1.1);
+    transition: .4s ease-in ;
+    background: linear-gradient(to right,#000000, #000000, #000000);
+}
